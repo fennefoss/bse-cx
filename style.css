@@ -1,3 +1,11 @@
 .popup {
 	width: 600px;
 }
+
+.country {
+	display: none;
+}
+
+.js-country {
+	display: block;
+}
