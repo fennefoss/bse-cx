@@ -17,3 +17,15 @@ window.onload = function(){
 	};
 
 };
+
+// A $( document ).ready() block.
+$( document ).ready(function() {
+    console.log( "jQuery is loaded" );
+
+
+    // Add class to country.links when brands is selected
+    $('.jj, .sl, .sh, .sf').click(function() {
+  		console.log('Brand has been selected');
+  		$('.country-links a').addClass('this');
+	});
+});
