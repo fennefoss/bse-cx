@@ -1,0 +1,52 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>BSE - store selector</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: none;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+  </head>
+  <body>
+  <section class="popup">
+        something
+        <h1>BSE - Store selector</h1>
+
+
+        <div class="">
+            <h3>Brands:</h3>
+
+        </div>
+
+        <button onclick="myFunction()">Click me</button>
+
+
+
+        <div id="status"></div>
+        <img id="image-result" hidden>
+    </section>
+  </body>
+</html>
+
