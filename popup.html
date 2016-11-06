@@ -28,6 +28,7 @@
       -
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
      -->
+     <script type="text/javascript" src="jquery.min.js"></script>
      <script src="popup.js"></script>
   </head>
   <body>
@@ -56,7 +57,7 @@
             <div class="s">Selected</div>
         </div>
 
-        <div id="country" class="country">
+        <div id="environment" class="environment">
             <span>< Back</span>
             <h3>Country:</h3>
             <ul>
@@ -72,10 +73,10 @@
             <span>< Back</span>
             <h3>Country:</h3>
             <ul class="country-links">
-                <a href="" target="_blank"><li class="de">DE</li></a>
-                <a href="" target="_blank"><li class="dk">DK</li></a>
-                <a href="" target="_blank"><li class="no">NO</li></a>
-                <a href="" target="_blank"><li class="se">SE</li></a>
+                <a href="" target="_blank" class="de"><li class="de">DE</li></a>
+                <a href="" target="_blank" class="country-item"><li class="dk">DK</li></a>
+                <a href="" target="_blank" class="country-item"><li class="no">NO</li></a>
+                <a href="" target="_blank" class="country-item"><li class="se">SE</li></a>
             </ul>
         </div>
 

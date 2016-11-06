@@ -13,6 +13,7 @@ window.onload = function(){
 	// click brand get country
 	document.querySelector(".jj").onclick = function(){
 		document.getElementById("country").className = "js-country";
-		document.querySelector('.country-links')
+		document.querySelector('.country-links a').classList.add('jj');
 	};
+
 };
