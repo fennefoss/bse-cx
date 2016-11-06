@@ -1,9 +1,5 @@
- $("body").append('Test');
-        
-        $( document ).ready(function() {
-            console.log( "ready!" );
-
-            $('.popup').click(function(){
-                $(this).css('color', 'red');
-            });
-        });
+window.onload = function(){ 
+	document.getElementById("popup").onclick = function(){
+		document.getElementById("popup").className = "MyClass";
+	};
+};
