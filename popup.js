@@ -10,10 +10,10 @@ window.onload = function(){
 	};
 
 	// click brand get country
-	document.querySelector(".jj").onclick = function(){
-		document.getElementById("country").className = "js-country";
-		document.querySelector('.country-links a').classList.add('jj');
-	};
+	//document.querySelector(".jj").onclick = function(){
+	//	document.getElementById("country").className = "js-country";
+	//	document.querySelector('.country-links a').classList.add('jj');
+	//};
 
 };
 
@@ -24,18 +24,69 @@ $( document ).ready(function() {
     // Add jj class to country links when jj is selected as a brand
     $('.jj').click(function() {
         console.log('JJ has been selected');
-        $('.country-links a').addClass('jj');
+
+        $('.country-links a').attr('href',function(i,v) {
+            return "jackjones.com" + v;
+        });
+
+    });
+
+    $('.sl').click(function() {
+        console.log('SL has been selected');
+        
+        $('.country-links a').attr('href',function(i,v) {
+            return "selected.com" + v;
+        });
+
+    });
+
+    $('.sf').click(function() {
+        console.log('SF has been selected');
+
+        $('.country-links a').attr('href',function(i,v) {
+            return "selectedfemme.com" + v;
+        });
+    });
+
+    $('.sh').click(function() {
+        console.log('SH has been selected');
+
+        $('.country-links a').attr('href',function(i,v) {
+            return "selectedhomme.com" + v;
+        });
     });
 
     // Add development class to country links when development is selected as an environment
     $('.development').click(function() {
         console.log('development has been selected');
-        $('.country-links a').addClass('development');
+        var href = $(this).attr('href');
 
-        if ($(".country-links a").hasClass("jj development")) {
-            console.log('link has been created');
-            $('.country-links a.de').attr('href','http://development.bing.jackjones.com/de/de/home');
-        }
+        $('.country-links a').attr('href',function(i,v) {
+            return "http://development.bing." + v;
+        });
+
+    });
+
+    // Add staging class to country links when development is selected as an environment
+    $('.staging').click(function() {
+        console.log('staging has been selected');
+        var href = $(this).attr('href');
+
+        $('.country-links a').attr('href',function(i,v) {
+            return "http://staging.bing." + v;
+        });
+
+    });
+
+    // Add production class to country links when development is selected as an environment
+    $('.production').click(function() {
+        console.log('prodution has been selected');
+        var href = $(this).attr('href');
+
+        $('.country-links a').attr('href',function(i,v) {
+            return "http://www." + v;
+        });
+
     });
 
 });

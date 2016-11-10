@@ -6,10 +6,6 @@ body {
 	width: 400px;
 }
 
-.country {
-	display: none;
-}
-
 .js-country {
 	display: block;
 }
