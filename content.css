@@ -1,3 +1,6 @@
-body {
-	background-color: red;
+#bse-cx-information-bar {
+	background-color: tan;
+	position: fixed;
+    top: 0;
+    z-index: 999;
 }
