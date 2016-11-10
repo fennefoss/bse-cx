@@ -1,23 +1,82 @@
 body {
-	background-color: #f9f9f9;
+    background-color: #f9f9f9;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
 }
 
 .popup {
-	width: 400px;
+    width: 400px;
+}
+
+.bm-link {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    width: 50%;
+    color: #fff;
+}
+
+.bm-link.sand {
+    background-color: #54585a;
+}
+
+.bm-link.dev {
+    background-color: #64772d;
+}
+
+.bm-link.sta {
+    background-color: #00629b;
+}
+
+.bm-link.pro {
+    background-color: #891a1a;
+}
+
+.environment {
+    display: none;
+}
+
+.country {
+    display: none;
 }
 
 .js-country {
-	display: block;
+    display: block;
 }
 
-      body {
-        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
-        font-size: 100%;
-      }
-      #status {
-        /* avoid an excessively wide status text */
-        white-space: pre;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        max-width: none;
-      }
+body {
+    font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+#status {
+    /* avoid an excessively wide status text */
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: none;
+}
+
+.section-header {
+    text-align: center;
+}

@@ -25,6 +25,8 @@ $( document ).ready(function() {
     $('.jj').click(function() {
         console.log('JJ has been selected');
 
+        $('.environment').show();
+
         $('.country-links a').attr('href',function(i,v) {
             return "jackjones.com" + v;
         });
@@ -33,6 +35,8 @@ $( document ).ready(function() {
 
     $('.sl').click(function() {
         console.log('SL has been selected');
+
+        $('.environment').show();
         
         $('.country-links a').attr('href',function(i,v) {
             return "selected.com" + v;
@@ -43,6 +47,8 @@ $( document ).ready(function() {
     $('.sf').click(function() {
         console.log('SF has been selected');
 
+        $('.environment').show();
+
         $('.country-links a').attr('href',function(i,v) {
             return "selectedfemme.com" + v;
         });
@@ -50,6 +56,8 @@ $( document ).ready(function() {
 
     $('.sh').click(function() {
         console.log('SH has been selected');
+
+        $('.environment').show();
 
         $('.country-links a').attr('href',function(i,v) {
             return "selectedhomme.com" + v;
@@ -60,6 +68,8 @@ $( document ).ready(function() {
     $('.development').click(function() {
         console.log('development has been selected');
         var href = $(this).attr('href');
+
+        $('.country').show();
 
         $('.country-links a').attr('href',function(i,v) {
             return "http://development.bing." + v;
@@ -72,6 +82,8 @@ $( document ).ready(function() {
         console.log('staging has been selected');
         var href = $(this).attr('href');
 
+        $('.country').show();
+
         $('.country-links a').attr('href',function(i,v) {
             return "http://staging.bing." + v;
         });
@@ -82,6 +94,8 @@ $( document ).ready(function() {
     $('.production').click(function() {
         console.log('prodution has been selected');
         var href = $(this).attr('href');
+
+        $('.country').show();
 
         $('.country-links a').attr('href',function(i,v) {
             return "http://www." + v;
