@@ -15,14 +15,22 @@ $( document ).ready(function() {
     $(document.body).append('<div id="bse-cx-information-bar">Da tool fool !</div >');
 
     // get the page type
-    $(function(){
+    $(function pageTypeAnalyze(){
     	var pageType = $('#wrapper').attr('class');
-    	console.log(pageType);
+        $('#bse-cx-information-bar').append(' Pagetype: ' + pageType);
 	});
 
-    //WORKING
-    //var contentToolMarkup = '<button class="content-tool">Analyze page</button>';
-    // prepend content tool to the body tag
-    //$('#wrapper').prepend( $(contentToolMarkup) );
+    // get the category ID
+    $(function categoryIdAnalyze(){
+        var categoryId = $('#wrapper').attr('class');
+        $('#bse-cx-information-bar').append(' Category ID: ' + categoryId);
+    });
+
+    // get the product ID
+    $(function productIdAnalyze(){
+        var productId = $('.pdpForm').attr('data-articlenumber');
+        $('#bse-cx-information-bar').append(' Product ID: ' + productId);
+        console.log(productId);
+    });
 
 });

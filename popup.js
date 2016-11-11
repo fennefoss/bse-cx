@@ -9,11 +9,18 @@ window.onload = function(){
 		document.getElementById("popup").classList.add('myclass');
 	};
 
-	// click brand get country
-	//document.querySelector(".jj").onclick = function(){
-	//	document.getElementById("country").className = "js-country";
-	//	document.querySelector('.country-links a').classList.add('jj');
-	//};
+var save_button = document.getElementById('Save');
+save_button.onclick = saveData;
+
+function saveData(){
+  var input = document.getElementById("saveServer");
+  localStorage.setItem("server", input.value);
+  var storedValue = localStorage.getItem("server");
+  console.log(storedValue);
+  return storedValue;
+}
+
+
 
 };
 

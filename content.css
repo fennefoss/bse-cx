@@ -1,6 +1,9 @@
 #bse-cx-information-bar {
-	background-color: tan;
 	position: fixed;
     top: 0;
     z-index: 999;
+    color: #000;
+    opacity: 0.9;
+    right: 0;
+    text-align: right;
 }
